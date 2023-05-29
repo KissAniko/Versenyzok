@@ -12,24 +12,24 @@ namespace Versenyzők
         // név;születési_dátum;nemzetiség;rajtszám
 
         string nev;
-        string datum;
+        DateTime datum;
         string nemzettseg;
-        int rajtSzam;
-        int ev;
+        string rajtSzam;
+       
 
-        public Pilotak(string nev, string datum, string nemzettseg, int rajtSzam)
+        public Pilotak(string nev, DateTime datum, string nemzettseg, string rajtSzam)
         {
             this.nev = nev;
             this.datum = datum;
             this.nemzettseg = nemzettseg;
             this.rajtSzam = rajtSzam;
-
+            
         }
 
         public string Nev { get => nev; set => nev = value; }
-        public string Datum { get => datum; set => datum = value; }
         public string Nemzettseg { get => nemzettseg; set => nemzettseg = value; }
-        public int RajtSzam { get => rajtSzam; set => rajtSzam = value; }
-        public int Ev { get => ev; set => ev= value; }
+        public string RajtSzam { get => rajtSzam; set => rajtSzam = value; }       
+        internal DateTime Datum { get => datum; set => datum = value; }
     }
+      
 }
