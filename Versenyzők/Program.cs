@@ -91,25 +91,6 @@ namespace Versenyzők
         } 
     
 
-   /*     static List<Pilotak> BeolvasPilotak(string fajlnev)
-        {
-            List<Pilotak> pilotak2 = new List<Pilotak>();
-
-            string[] adatok = File.ReadAllLines(fajlnev);
-            for (int i = 1; i < adatok.Length; i++)
-            {
-                string[] pilotak = adatok[i].Split(';');
-                string nev = adatok[0];
-                DateTime szuletesiDatum = DateTime.Parse(pilotak[1]);
-                string nemzettseg = pilotak[2];
-                string rajtszam = pilotak[3];
-
-                
-            }
-
-            return pilotak2;
-        }
-    */
         
     }
     }
